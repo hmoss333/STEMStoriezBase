@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: fa6bd7bc1c046e14facc96c8cf00091e
+timeCreated: 1518197894
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Bellerose
+  fontNames:
+  - Bellerose
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

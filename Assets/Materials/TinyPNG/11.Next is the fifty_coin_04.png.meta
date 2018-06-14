@@ -1,0 +1,456 @@
+fileFormatVersion: 2
+guid: a0e6809e7950b904dba0246d507cd13d
+timeCreated: 1521722508
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 11.Next is the fifty_coin_04_0
+    21300002: 11.Next is the fifty_coin_04_1
+    21300004: 11.Next is the fifty_coin_04_2
+    21300006: 11.Next is the fifty_coin_04_3
+    21300008: 11.Next is the fifty_coin_04_4
+    21300010: 11.Next is the fifty_coin_04_5
+    21300012: 11.Next is the fifty_coin_04_6
+    21300014: 11.Next is the fifty_coin_04_7
+    21300016: 11.Next is the fifty_coin_04_8
+    21300018: 11.Next is the fifty_coin_04_9
+    21300020: 11.Next is the fifty_coin_04_10
+    21300022: 11.Next is the fifty_coin_04_11
+    21300024: 11.Next is the fifty_coin_04_12
+    21300026: 11.Next is the fifty_coin_04_13
+    21300028: 11.Next is the fifty_coin_04_14
+    21300030: 11.Next is the fifty_coin_04_15
+    21300032: 11.Next is the fifty_coin_04_16
+    21300034: 11.Next is the fifty_coin_04_17
+    21300036: 11.Next is the fifty_coin_04_18
+    21300038: 11.Next is the fifty_coin_04_19
+    21300040: 11.Next is the fifty_coin_04_20
+    21300042: 11.Next is the fifty_coin_04_21
+    21300044: 11.Next is the fifty_coin_04_22
+    21300046: 11.Next is the fifty_coin_04_23
+    21300048: 11.Next is the fifty_coin_04_24
+    21300050: 11.Next is the fifty_coin_04_25
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 11.Next is the fifty_coin_04_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3838
+        width: 145
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 11.Next is the fifty_coin_04_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 3838
+        width: 145
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 11.Next is the fifty_coin_04_2
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 3838
+        width: 145
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 11.Next is the fifty_coin_04_3
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 3838
+        width: 145
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 11.Next is the fifty_coin_04_4
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 3838
+        width: 145
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 11.Next is the fifty_coin_04_5
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 3838
+        width: 145
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 11.Next is the fifty_coin_04_6
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 3838
+        width: 145
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 11.Next is the fifty_coin_04_7
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 3838
+        width: 145
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 11.Next is the fifty_coin_04_8
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 3838
+        width: 145
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 11.Next is the fifty_coin_04_9
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 3838
+        width: 145
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 11.Next is the fifty_coin_04_10
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 3838
+        width: 145
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 11.Next is the fifty_coin_04_11
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 3838
+        width: 145
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 11.Next is the fifty_coin_04_12
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 3838
+        width: 145
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 11.Next is the fifty_coin_04_13
+      rect:
+        serializedVersion: 2
+        x: 1885
+        y: 3838
+        width: 145
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 11.Next is the fifty_coin_04_14
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 3838
+        width: 145
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 11.Next is the fifty_coin_04_15
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 3838
+        width: 145
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 11.Next is the fifty_coin_04_16
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 3838
+        width: 145
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 11.Next is the fifty_coin_04_17
+      rect:
+        serializedVersion: 2
+        x: 2465
+        y: 3838
+        width: 145
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 11.Next is the fifty_coin_04_18
+      rect:
+        serializedVersion: 2
+        x: 2610
+        y: 3838
+        width: 145
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 11.Next is the fifty_coin_04_19
+      rect:
+        serializedVersion: 2
+        x: 2755
+        y: 3838
+        width: 145
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 11.Next is the fifty_coin_04_20
+      rect:
+        serializedVersion: 2
+        x: 2900
+        y: 3838
+        width: 145
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 11.Next is the fifty_coin_04_21
+      rect:
+        serializedVersion: 2
+        x: 3045
+        y: 3838
+        width: 145
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 11.Next is the fifty_coin_04_22
+      rect:
+        serializedVersion: 2
+        x: 3190
+        y: 3838
+        width: 145
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 11.Next is the fifty_coin_04_23
+      rect:
+        serializedVersion: 2
+        x: 3335
+        y: 3838
+        width: 145
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 11.Next is the fifty_coin_04_24
+      rect:
+        serializedVersion: 2
+        x: 3480
+        y: 3838
+        width: 145
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 11.Next is the fifty_coin_04_25
+      rect:
+        serializedVersion: 2
+        x: 3625
+        y: 3838
+        width: 145
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

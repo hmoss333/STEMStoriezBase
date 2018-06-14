@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: bf8964f77c8f5cb4e96d94fabdb52a7f
+timeCreated: 1518197894
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: New Comic BD Outline
+  fontNames:
+  - New Comic BD Outline
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

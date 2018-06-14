@@ -1,0 +1,428 @@
+fileFormatVersion: 2
+guid: 8544d5f9cf654c64dbe1fe4069768dda
+timeCreated: 1521721873
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 6.Keep counting by_dollar_0
+    21300002: 6.Keep counting by_dollar_1
+    21300004: 6.Keep counting by_dollar_2
+    21300006: 6.Keep counting by_dollar_3
+    21300008: 6.Keep counting by_dollar_4
+    21300010: 6.Keep counting by_dollar_5
+    21300012: 6.Keep counting by_dollar_6
+    21300014: 6.Keep counting by_dollar_7
+    21300016: 6.Keep counting by_dollar_8
+    21300018: 6.Keep counting by_dollar_9
+    21300020: 6.Keep counting by_dollar_10
+    21300022: 6.Keep counting by_dollar_11
+    21300024: 6.Keep counting by_dollar_12
+    21300026: 6.Keep counting by_dollar_13
+    21300028: 6.Keep counting by_dollar_14
+    21300030: 6.Keep counting by_dollar_15
+    21300032: 6.Keep counting by_dollar_16
+    21300034: 6.Keep counting by_dollar_17
+    21300036: 6.Keep counting by_dollar_18
+    21300038: 6.Keep counting by_dollar_19
+    21300040: 6.Keep counting by_dollar_20
+    21300042: 6.Keep counting by_dollar_21
+    21300044: 6.Keep counting by_dollar_22
+    21300046: 6.Keep counting by_dollar_23
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 6.Keep counting by_dollar_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3890
+        width: 188
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 6.Keep counting by_dollar_1
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 3890
+        width: 188
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 6.Keep counting by_dollar_2
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 3890
+        width: 188
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 6.Keep counting by_dollar_3
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 3890
+        width: 188
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 6.Keep counting by_dollar_4
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 3890
+        width: 188
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 6.Keep counting by_dollar_5
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 3890
+        width: 188
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 6.Keep counting by_dollar_6
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 3890
+        width: 188
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 6.Keep counting by_dollar_7
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 3890
+        width: 188
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 6.Keep counting by_dollar_8
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 3890
+        width: 188
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 6.Keep counting by_dollar_9
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 3890
+        width: 188
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 6.Keep counting by_dollar_10
+      rect:
+        serializedVersion: 2
+        x: 1880
+        y: 3890
+        width: 188
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 6.Keep counting by_dollar_11
+      rect:
+        serializedVersion: 2
+        x: 2068
+        y: 3890
+        width: 188
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 6.Keep counting by_dollar_12
+      rect:
+        serializedVersion: 2
+        x: 2256
+        y: 3890
+        width: 188
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 6.Keep counting by_dollar_13
+      rect:
+        serializedVersion: 2
+        x: 2444
+        y: 3890
+        width: 188
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 6.Keep counting by_dollar_14
+      rect:
+        serializedVersion: 2
+        x: 2632
+        y: 3890
+        width: 188
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 6.Keep counting by_dollar_15
+      rect:
+        serializedVersion: 2
+        x: 2820
+        y: 3890
+        width: 188
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 6.Keep counting by_dollar_16
+      rect:
+        serializedVersion: 2
+        x: 3008
+        y: 3890
+        width: 188
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 6.Keep counting by_dollar_17
+      rect:
+        serializedVersion: 2
+        x: 3196
+        y: 3890
+        width: 188
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 6.Keep counting by_dollar_18
+      rect:
+        serializedVersion: 2
+        x: 3384
+        y: 3890
+        width: 188
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 6.Keep counting by_dollar_19
+      rect:
+        serializedVersion: 2
+        x: 3572
+        y: 3890
+        width: 188
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 6.Keep counting by_dollar_20
+      rect:
+        serializedVersion: 2
+        x: 3760
+        y: 3890
+        width: 188
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 6.Keep counting by_dollar_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3684
+        width: 188
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 6.Keep counting by_dollar_22
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 3684
+        width: 188
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 6.Keep counting by_dollar_23
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 3684
+        width: 188
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

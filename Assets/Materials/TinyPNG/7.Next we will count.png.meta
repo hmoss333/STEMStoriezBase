@@ -1,0 +1,428 @@
+fileFormatVersion: 2
+guid: 6a6d8b4f964d49b4487b918698596653
+timeCreated: 1521721948
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 7.Next we will count_0
+    21300002: 7.Next we will count_1
+    21300004: 7.Next we will count_2
+    21300006: 7.Next we will count_3
+    21300008: 7.Next we will count_4
+    21300010: 7.Next we will count_5
+    21300012: 7.Next we will count_6
+    21300014: 7.Next we will count_7
+    21300016: 7.Next we will count_8
+    21300018: 7.Next we will count_9
+    21300020: 7.Next we will count_10
+    21300022: 7.Next we will count_11
+    21300024: 7.Next we will count_12
+    21300026: 7.Next we will count_13
+    21300028: 7.Next we will count_14
+    21300030: 7.Next we will count_15
+    21300032: 7.Next we will count_16
+    21300034: 7.Next we will count_17
+    21300036: 7.Next we will count_18
+    21300038: 7.Next we will count_19
+    21300040: 7.Next we will count_20
+    21300042: 7.Next we will count_21
+    21300044: 7.Next we will count_22
+    21300046: 7.Next we will count_23
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 7.Next we will count_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3370
+        width: 605
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 7.Next we will count_1
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 3370
+        width: 605
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 7.Next we will count_2
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 3370
+        width: 605
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 7.Next we will count_3
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 3370
+        width: 605
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 7.Next we will count_4
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 3370
+        width: 605
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 7.Next we will count_5
+      rect:
+        serializedVersion: 2
+        x: 3025
+        y: 3370
+        width: 605
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 7.Next we will count_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2644
+        width: 605
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 7.Next we will count_7
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 2644
+        width: 605
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 7.Next we will count_8
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 2644
+        width: 605
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 7.Next we will count_9
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 2644
+        width: 605
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 7.Next we will count_10
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 2644
+        width: 605
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 7.Next we will count_11
+      rect:
+        serializedVersion: 2
+        x: 3025
+        y: 2644
+        width: 605
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 7.Next we will count_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1918
+        width: 605
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 7.Next we will count_13
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 1918
+        width: 605
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 7.Next we will count_14
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 1918
+        width: 605
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 7.Next we will count_15
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 1918
+        width: 605
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 7.Next we will count_16
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 1918
+        width: 605
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 7.Next we will count_17
+      rect:
+        serializedVersion: 2
+        x: 3025
+        y: 1918
+        width: 605
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 7.Next we will count_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1192
+        width: 605
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 7.Next we will count_19
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 1192
+        width: 605
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 7.Next we will count_20
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 1192
+        width: 605
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 7.Next we will count_21
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 1192
+        width: 605
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 7.Next we will count_22
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 1192
+        width: 605
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 7.Next we will count_23
+      rect:
+        serializedVersion: 2
+        x: 3025
+        y: 1192
+        width: 605
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

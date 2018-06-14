@@ -1,0 +1,428 @@
+fileFormatVersion: 2
+guid: 05d11242b1be9e347b47d8c02c0f82df
+timeCreated: 1521721495
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 2.Money for counting_money_drawer_0
+    21300002: 2.Money for counting_money_drawer_1
+    21300004: 2.Money for counting_money_drawer_2
+    21300006: 2.Money for counting_money_drawer_3
+    21300008: 2.Money for counting_money_drawer_4
+    21300010: 2.Money for counting_money_drawer_5
+    21300012: 2.Money for counting_money_drawer_6
+    21300014: 2.Money for counting_money_drawer_7
+    21300016: 2.Money for counting_money_drawer_8
+    21300018: 2.Money for counting_money_drawer_9
+    21300020: 2.Money for counting_money_drawer_10
+    21300022: 2.Money for counting_money_drawer_11
+    21300024: 2.Money for counting_money_drawer_12
+    21300026: 2.Money for counting_money_drawer_13
+    21300028: 2.Money for counting_money_drawer_14
+    21300030: 2.Money for counting_money_drawer_15
+    21300032: 2.Money for counting_money_drawer_16
+    21300034: 2.Money for counting_money_drawer_17
+    21300036: 2.Money for counting_money_drawer_18
+    21300038: 2.Money for counting_money_drawer_19
+    21300040: 2.Money for counting_money_drawer_20
+    21300042: 2.Money for counting_money_drawer_21
+    21300044: 2.Money for counting_money_drawer_22
+    21300046: 2.Money for counting_money_drawer_23
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 2.Money for counting_money_drawer_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3701
+        width: 514
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2.Money for counting_money_drawer_1
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 3701
+        width: 514
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2.Money for counting_money_drawer_2
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 3701
+        width: 514
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2.Money for counting_money_drawer_3
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 3701
+        width: 514
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2.Money for counting_money_drawer_4
+      rect:
+        serializedVersion: 2
+        x: 2056
+        y: 3701
+        width: 514
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2.Money for counting_money_drawer_5
+      rect:
+        serializedVersion: 2
+        x: 2570
+        y: 3701
+        width: 514
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2.Money for counting_money_drawer_6
+      rect:
+        serializedVersion: 2
+        x: 3084
+        y: 3701
+        width: 514
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2.Money for counting_money_drawer_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3306
+        width: 514
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2.Money for counting_money_drawer_8
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 3306
+        width: 514
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2.Money for counting_money_drawer_9
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 3306
+        width: 514
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2.Money for counting_money_drawer_10
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 3306
+        width: 514
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2.Money for counting_money_drawer_11
+      rect:
+        serializedVersion: 2
+        x: 2056
+        y: 3306
+        width: 514
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2.Money for counting_money_drawer_12
+      rect:
+        serializedVersion: 2
+        x: 2570
+        y: 3306
+        width: 514
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2.Money for counting_money_drawer_13
+      rect:
+        serializedVersion: 2
+        x: 3084
+        y: 3306
+        width: 514
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2.Money for counting_money_drawer_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2911
+        width: 514
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2.Money for counting_money_drawer_15
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 2911
+        width: 514
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2.Money for counting_money_drawer_16
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 2911
+        width: 514
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2.Money for counting_money_drawer_17
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 2911
+        width: 514
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2.Money for counting_money_drawer_18
+      rect:
+        serializedVersion: 2
+        x: 2056
+        y: 2911
+        width: 514
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2.Money for counting_money_drawer_19
+      rect:
+        serializedVersion: 2
+        x: 2570
+        y: 2911
+        width: 514
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2.Money for counting_money_drawer_20
+      rect:
+        serializedVersion: 2
+        x: 3084
+        y: 2911
+        width: 514
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2.Money for counting_money_drawer_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2516
+        width: 514
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2.Money for counting_money_drawer_22
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 2516
+        width: 514
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2.Money for counting_money_drawer_23
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 2516
+        width: 514
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,428 @@
+fileFormatVersion: 2
+guid: 230edff345516ea478083c8f6d86b246
+timeCreated: 1521723330
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 15.Counting dollars in_girl_0
+    21300002: 15.Counting dollars in_girl_1
+    21300004: 15.Counting dollars in_girl_2
+    21300006: 15.Counting dollars in_girl_3
+    21300008: 15.Counting dollars in_girl_4
+    21300010: 15.Counting dollars in_girl_5
+    21300012: 15.Counting dollars in_girl_6
+    21300014: 15.Counting dollars in_girl_7
+    21300016: 15.Counting dollars in_girl_8
+    21300018: 15.Counting dollars in_girl_9
+    21300020: 15.Counting dollars in_girl_10
+    21300022: 15.Counting dollars in_girl_11
+    21300024: 15.Counting dollars in_girl_12
+    21300026: 15.Counting dollars in_girl_13
+    21300028: 15.Counting dollars in_girl_14
+    21300030: 15.Counting dollars in_girl_15
+    21300032: 15.Counting dollars in_girl_16
+    21300034: 15.Counting dollars in_girl_17
+    21300036: 15.Counting dollars in_girl_18
+    21300038: 15.Counting dollars in_girl_19
+    21300040: 15.Counting dollars in_girl_20
+    21300042: 15.Counting dollars in_girl_21
+    21300044: 15.Counting dollars in_girl_22
+    21300046: 15.Counting dollars in_girl_23
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 15.Counting dollars in_girl_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3409
+        width: 399
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 15.Counting dollars in_girl_1
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 3409
+        width: 399
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 15.Counting dollars in_girl_2
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 3409
+        width: 399
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 15.Counting dollars in_girl_3
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 3409
+        width: 399
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 15.Counting dollars in_girl_4
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 3409
+        width: 399
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 15.Counting dollars in_girl_5
+      rect:
+        serializedVersion: 2
+        x: 1995
+        y: 3409
+        width: 399
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 15.Counting dollars in_girl_6
+      rect:
+        serializedVersion: 2
+        x: 2394
+        y: 3409
+        width: 399
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 15.Counting dollars in_girl_7
+      rect:
+        serializedVersion: 2
+        x: 2793
+        y: 3409
+        width: 399
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 15.Counting dollars in_girl_8
+      rect:
+        serializedVersion: 2
+        x: 3192
+        y: 3409
+        width: 399
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 15.Counting dollars in_girl_9
+      rect:
+        serializedVersion: 2
+        x: 3591
+        y: 3409
+        width: 399
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 15.Counting dollars in_girl_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2722
+        width: 399
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 15.Counting dollars in_girl_11
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 2722
+        width: 399
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 15.Counting dollars in_girl_12
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 2722
+        width: 399
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 15.Counting dollars in_girl_13
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 2722
+        width: 399
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 15.Counting dollars in_girl_14
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 2722
+        width: 399
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 15.Counting dollars in_girl_15
+      rect:
+        serializedVersion: 2
+        x: 1995
+        y: 2722
+        width: 399
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 15.Counting dollars in_girl_16
+      rect:
+        serializedVersion: 2
+        x: 2394
+        y: 2722
+        width: 399
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 15.Counting dollars in_girl_17
+      rect:
+        serializedVersion: 2
+        x: 2793
+        y: 2722
+        width: 399
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 15.Counting dollars in_girl_18
+      rect:
+        serializedVersion: 2
+        x: 3192
+        y: 2722
+        width: 399
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 15.Counting dollars in_girl_19
+      rect:
+        serializedVersion: 2
+        x: 3591
+        y: 2722
+        width: 399
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 15.Counting dollars in_girl_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2035
+        width: 399
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 15.Counting dollars in_girl_21
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 2035
+        width: 399
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 15.Counting dollars in_girl_22
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 2035
+        width: 399
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 15.Counting dollars in_girl_23
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 2035
+        width: 399
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

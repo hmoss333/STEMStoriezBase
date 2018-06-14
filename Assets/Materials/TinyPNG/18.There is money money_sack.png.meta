@@ -1,0 +1,428 @@
+fileFormatVersion: 2
+guid: c31d514717aeab141904e1881daf4d82
+timeCreated: 1521723626
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 18.There is money money_sack_0
+    21300002: 18.There is money money_sack_1
+    21300004: 18.There is money money_sack_2
+    21300006: 18.There is money money_sack_3
+    21300008: 18.There is money money_sack_4
+    21300010: 18.There is money money_sack_5
+    21300012: 18.There is money money_sack_6
+    21300014: 18.There is money money_sack_7
+    21300016: 18.There is money money_sack_8
+    21300018: 18.There is money money_sack_9
+    21300020: 18.There is money money_sack_10
+    21300022: 18.There is money money_sack_11
+    21300024: 18.There is money money_sack_12
+    21300026: 18.There is money money_sack_13
+    21300028: 18.There is money money_sack_14
+    21300030: 18.There is money money_sack_15
+    21300032: 18.There is money money_sack_16
+    21300034: 18.There is money money_sack_17
+    21300036: 18.There is money money_sack_18
+    21300038: 18.There is money money_sack_19
+    21300040: 18.There is money money_sack_20
+    21300042: 18.There is money money_sack_21
+    21300044: 18.There is money money_sack_22
+    21300046: 18.There is money money_sack_23
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 18.There is money money_sack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3523
+        width: 371
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 18.There is money money_sack_1
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 3523
+        width: 371
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 18.There is money money_sack_2
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 3523
+        width: 371
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 18.There is money money_sack_3
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 3523
+        width: 371
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 18.There is money money_sack_4
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 3523
+        width: 371
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 18.There is money money_sack_5
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 3523
+        width: 371
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 18.There is money money_sack_6
+      rect:
+        serializedVersion: 2
+        x: 2226
+        y: 3523
+        width: 371
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 18.There is money money_sack_7
+      rect:
+        serializedVersion: 2
+        x: 2597
+        y: 3523
+        width: 371
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 18.There is money money_sack_8
+      rect:
+        serializedVersion: 2
+        x: 2968
+        y: 3523
+        width: 371
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 18.There is money money_sack_9
+      rect:
+        serializedVersion: 2
+        x: 3339
+        y: 3523
+        width: 371
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 18.There is money money_sack_10
+      rect:
+        serializedVersion: 2
+        x: 3710
+        y: 3523
+        width: 371
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 18.There is money money_sack_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2950
+        width: 371
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 18.There is money money_sack_12
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 2950
+        width: 371
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 18.There is money money_sack_13
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 2950
+        width: 371
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 18.There is money money_sack_14
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 2950
+        width: 371
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 18.There is money money_sack_15
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 2950
+        width: 371
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 18.There is money money_sack_16
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 2950
+        width: 371
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 18.There is money money_sack_17
+      rect:
+        serializedVersion: 2
+        x: 2226
+        y: 2950
+        width: 371
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 18.There is money money_sack_18
+      rect:
+        serializedVersion: 2
+        x: 2597
+        y: 2950
+        width: 371
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 18.There is money money_sack_19
+      rect:
+        serializedVersion: 2
+        x: 2968
+        y: 2950
+        width: 371
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 18.There is money money_sack_20
+      rect:
+        serializedVersion: 2
+        x: 3339
+        y: 2950
+        width: 371
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 18.There is money money_sack_21
+      rect:
+        serializedVersion: 2
+        x: 3710
+        y: 2950
+        width: 371
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 18.There is money money_sack_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2377
+        width: 371
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 18.There is money money_sack_23
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 2377
+        width: 371
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: db202fa2485a0604b976aaeb2000daff
+timeCreated: 1518197894
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: New Comic BD Shadow
+  fontNames:
+  - New Comic BD Shadow
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
