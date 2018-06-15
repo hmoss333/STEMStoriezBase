@@ -6,30 +6,35 @@ public class Test : MonoBehaviour
 {
 	[Header("Variables")]
 	private bool enabled = true;
-	//public bool isOn = false; // Clicking will toggle the button on and off. Starts off
-	private int count = -1;
+    private int count = -1;
 	string message;
 	private bool completetext = true;
+    
 	//bool animateBook = false;
 	//bool animateChest = false;
-	//private bool didSeeKeyPress = false;
+    
+	private bool didSeeKeyPress = false;
 	private bool objectApp = false;
+    
 	private bool key3Press = false;
 	private bool key2Press = false;
 	private bool key1Press = false;
 	private bool keyspacePress = false;
 	private bool keyenterPress = false;
+    
 	private bool repeat = false;
 	private bool back = false;
+
 	private bool backPage = false;
 	private bool repeatPage = false;
 	private bool nextPage = false;
+
 	private bool load = false;
 	float startAlpha;
 	int sequence;
-	//bool isAnimationEffect = true;
 	int randMusic;
 	Event e;
+
 
 	[Header("Menu Objects")]
 	public GameObject storyParent;
@@ -74,42 +79,7 @@ public class Test : MonoBehaviour
 	public GameObject specialAnimationEffect18;
 
     [Header("Story Audio")]
-    public AudioClip part1;
-    public AudioClip part2;
-    public AudioClip part3;
-    public AudioClip part4;
-    public AudioClip part5;
-    public AudioClip part6;
-    public AudioClip part7;
-    public AudioClip part8;
-    public AudioClip part9;
-    public AudioClip part10;
-    public AudioClip part11;
-    public AudioClip part12;
-    public AudioClip part13;
-    public AudioClip part14;
-    public AudioClip part15;
-    public AudioClip part16;
-    public AudioClip part17;
-    public AudioClip part18;
-    public AudioClip part19;
-    public AudioClip part20;
-    public AudioClip part21;
-    public AudioClip part22;
-    public AudioClip part23;
-    public AudioClip part24;
-    public AudioClip part25;
-    public AudioClip part26;
-    public AudioClip part27;
-    public AudioClip part28;
-    public AudioClip part29;
-    public AudioClip part30;
-    public AudioClip part31;
-    public AudioClip part32;
-    public AudioClip part33;
-    public AudioClip part34;
-    public AudioClip part35;
-    public AudioClip part36;
+    public AudioClip[] part;
 
     [Header("Audio")]
 	public AudioClip soundSpecial1;
@@ -316,42 +286,8 @@ public class Test : MonoBehaviour
 
 		if (PlayerPrefs.GetInt("voice") == 1)
 		{
-            part1 = null;
-            part2 = null;
-            part3 = null;
-            part4 = null;
-            part5 = null;
-            part6 = null;
-            part7 = null;
-            part8 = null;
-            part9 = null;
-            part10 = null;
-            part11 = null;
-            part12 = null;
-            part13 = null;
-            part14 = null;
-            part15 = null;
-            part16 = null;
-            part17 = null;
-            part18 = null;
-            part19 = null;
-            part20 = null;
-            part21 = null;
-            part22 = null;
-            part23 = null;
-            part24 = null;
-            part25 = null;
-            part26 = null;
-            part27 = null;
-            part28 = null;
-            part29 = null;
-            part30 = null;
-            part31 = null;
-            part32 = null;
-            part33 = null;
-            part34 = null;
-            part35 = null;
-            part36 = null;
+            //bkgdaudiosource.volume = 0;
+            audiosource.volume = 0;
         }
 
 		OnClick();
@@ -403,6 +339,9 @@ public class Test : MonoBehaviour
 					//setTap ();
 				}
 			}
+
+            if (objectApp && inTutorialMode)
+                setTap();
 
             if ((PlayerPrefs.GetInt("educationOn") == 1) && (PlayerPrefs.GetInt("therapyOn") == 0))
             {
@@ -772,39 +711,39 @@ public class Test : MonoBehaviour
                 keyenterPress = false;
             }
 
-            if ((PlayerPrefs.GetInt("educationOn") == 0) && (PlayerPrefs.GetInt("therapyOn") == 1))
-            {
-                if ((PlayerPrefs.GetInt("key1toggle") == 0) && key1Press)
-                {
-                    setTap();
-                    OnClick();
-                }
-                if ((PlayerPrefs.GetInt("key2toggle") == 0) && key2Press)
-                {
-                    setTap();
-                    OnClick();
-                }
-                if ((PlayerPrefs.GetInt("key3toggle") == 0) && key3Press)
-                {
-                    setTap();
-                    OnClick();
-                }
-                if ((PlayerPrefs.GetInt("keySpacetoggle") == 0) && keyspacePress)
-                {
-                    setTap();
-                    OnClick();
-                }
-                if ((PlayerPrefs.GetInt("keyEntertoggle") == 0) && keyenterPress)
-                {
-                    setTap();
-                    OnClick();
-                }
-                key1Press = false;
-                key2Press = false;
-                key3Press = false;
-                keyspacePress = false;
-                keyenterPress = false;
-            }
+            //if ((PlayerPrefs.GetInt("educationOn") == 0) && (PlayerPrefs.GetInt("therapyOn") == 1))
+            //{
+            //    if ((PlayerPrefs.GetInt("key1toggle") == 0) && key1Press)
+            //    {
+            //        setTap();
+            //        OnClick();
+            //    }
+            //    if ((PlayerPrefs.GetInt("key2toggle") == 0) && key2Press)
+            //    {
+            //        setTap();
+            //        OnClick();
+            //    }
+            //    if ((PlayerPrefs.GetInt("key3toggle") == 0) && key3Press)
+            //    {
+            //        setTap();
+            //        OnClick();
+            //    }
+            //    if ((PlayerPrefs.GetInt("keySpacetoggle") == 0) && keyspacePress)
+            //    {
+            //        setTap();
+            //        OnClick();
+            //    }
+            //    if ((PlayerPrefs.GetInt("keyEntertoggle") == 0) && keyenterPress)
+            //    {
+            //        setTap();
+            //        OnClick();
+            //    }
+            //    key1Press = false;
+            //    key2Press = false;
+            //    key3Press = false;
+            //    keyspacePress = false;
+            //    keyenterPress = false;
+            //}
 
             if (objectApp && (((PlayerPrefs.GetInt("educationOn") == 1) && (PlayerPrefs.GetInt("therapyOn") == 1)) 
                 || ((PlayerPrefs.GetInt("educationOn") == 0) && (PlayerPrefs.GetInt("therapyOn") == 0))))
@@ -1145,10 +1084,10 @@ public class Test : MonoBehaviour
 
 	public void OnClick()
 	{
-		if (enabled == true && !inTutorialMode)
+		if (!inTutorialMode)
 		{
 			load = false;
-			enabled = false;
+			//enabled = false;
 			float nextAlpha = next.alpha;
 			float coverAlpha = cover.alpha;
 			play.text = "";
@@ -1242,24 +1181,30 @@ public class Test : MonoBehaviour
     public void SetMiniGame()
 	{
 		inMiniGameMode = true;
-		if (count >= 7)
-			playedGame1 = true;
-		if (count >= 17)
-			playedGame2 = true;
-		if (count >= 27)
-			playedGame3 = true;
-        //if (count >= 18)
-        //    playedGame4 = true;
+
+        switch (count)
+        {
+            case 7:
+                if (!playedGame1)
+                    playedGame1 = true;
+                break;
+            case 17:
+                if (!playedGame2)
+                    playedGame2 = true;
+                break;
+            case 27:
+                if (!playedGame3)
+                    playedGame3 = true;
+                break;
+        }
 
         audiosource.Stop();
 		mainCamera.gameObject.SetActive(false);
-		storyView.alpha = 0f;
-        //ls.LoadScene("MiniGameScreen_Story");
-        //ls.ChangeText("Let's play...");
         SceneManager.LoadSceneAsync("LoadingScreen");
-		StartCoroutine(GoToScene("MiniGameScreen_Story"));
-		//enabled = false;
-	}
+        storyView.alpha = 0f;
+
+        StartCoroutine(GoToScene("MiniGameScreen_Story"));
+    }
 
 	IEnumerator GoToScene(string sceneName)
 	{
@@ -1272,14 +1217,6 @@ public class Test : MonoBehaviour
 
 	public void EndMiniGame()
 	{
-  //      Scene scene = SceneManager.GetSceneByName("1stScene");
-		//if ((scene != null) && (!scene.isLoaded))
-		//{
-		//	StartCoroutine(GoToScene("Empty"));
-		//}
-		//SceneManager.UnloadSceneAsync("MiniGameScreen_Story");
-		//Resources.UnloadUnusedAssets();
-
         StartCoroutine(TurnOnCamera());
 	}
 	IEnumerator TurnOnCamera()
@@ -1316,1147 +1253,427 @@ public class Test : MonoBehaviour
 		StartCoroutine(FadeIn(sprite, 0.5f, startA));
 	}
 
-	IEnumerator FadeOuter(UIWidget w, float durationInSeconds, float nextAlpha, float coverAlpha)
-	{
-		inMiniGameMode = false; //ensures the scene has changed before OnClick checks if minigame is active; update OnClick so this isn't necissary
-
+    IEnumerator FadeOuter(UIWidget w, float durationInSeconds, float nextAlpha, float coverAlpha)
+    {
         float startA = w.alpha;
-        //label.text = "";
+        yield return null;
 
-        GameObject pagePrefab = null;
+        GameObject prefab = null;
 
-        if (count == -1)
-		{
-            //EnableCharacters(page1);
-            if (!back)
-            {
-                Destroy(GameObject.Find("Page (1)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (1)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-			audiosource.clip = part1;
-			audiosource.Play();
-			count++;
-			sprite.mainTexture = Resources.Load("image1") as Texture;
-			StartCoroutine(FadeIn(sprite, 0.5f, startA));
-			message = "There is money, \n money everywhere. ";
-			StartCoroutine(TypeText(nextAlpha, coverAlpha));
-		}
-		else if (count == 0)
-		{
-            yield return null;
-
-            if (back)
-            {
-                Destroy(GameObject.Find("Page (1)(Clone)"));
-                Destroy(GameObject.Find("Page (2)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (1)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-			audiosource.clip = part2;
-			audiosource.Play();
-			count++;
-			sprite.mainTexture = Resources.Load("image1") as Texture;
-			StartCoroutine(FadeIn(sprite, 0.5f, startA));
-			message = "Money for counting. \n Money to share. ";
-			StartCoroutine(TypeText(nextAlpha, coverAlpha));
-		}
-		else if (count == 1)
-		{
-            yield return null;
-
-            if (!back)
-            {
-                Destroy(GameObject.Find("Page (1)(Clone)"));
-                Destroy(GameObject.Find("Page (2)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (2)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-			audiosource.clip = part3;
-			audiosource.Play();
-			count++;
-			sprite.mainTexture = Resources.Load("image2") as Texture;
-			StartCoroutine(FadeIn(sprite, 0.5f, startA));
-			message = "There are lots of \n different coins to count. ";
-			StartCoroutine(TypeText(nextAlpha, coverAlpha));
-		}
-		else if (count == 2)
-		{
-            yield return null;
-
-            if (back)
-            {
-                Destroy(GameObject.Find("Page (2)(Clone)"));
-                Destroy(GameObject.Find("Page (3)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (2)")) as GameObject;
-                pagePrefab.transform.SetParent(storyView.transform);
-                pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.SetAnchor(storyView.transform);
-                }
-            }
-
-            audiosource.Stop();
-			audiosource.clip = part4;
-			audiosource.Play();
-			count++;
-			sprite.mainTexture = Resources.Load("image2") as Texture;
-			StartCoroutine(FadeIn(sprite, 0.5f, startA));
-			message = "And each coin is worth \n a different amount. ";
-			StartCoroutine(TypeText(nextAlpha, coverAlpha));
-		}
-        else if (count == 3)
-		{
-            yield return null;
-
-            if (!back)
-            {
-                Destroy(GameObject.Find("Page (2)(Clone)"));
-                Destroy(GameObject.Find("Page (3)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (3)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-			audiosource.clip = part5;
-			audiosource.Play();
-			count++;
-			sprite.mainTexture = Resources.Load("image3") as Texture;
-			StartCoroutine(FadeIn(sprite, 0.5f, startA));
-			message = "Count the pennies first \n because they are so much fun. ";
-			StartCoroutine(TypeText(nextAlpha, coverAlpha));
-		}
-		else if (count == 4)
-		{
-            yield return null;
-
-            if (back)
-            {
-                Destroy(GameObject.Find("Page (3)(Clone)"));
-                Destroy(GameObject.Find("Page (4)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (3)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-			audiosource.clip = part6;
-			audiosource.Play();
-			count++;
-			sprite.mainTexture = Resources.Load("image3") as Texture;
-			StartCoroutine(FadeIn(sprite, 0.5f, startA));
-			message = "Each penny's worth 1 cent. \n Let's count them one by one. ";
-			StartCoroutine(TypeText(nextAlpha, coverAlpha));
-		}
-		else if (count == 5)
-		{
-            yield return null;
-
-            if (!back)
-            {
-                Destroy(GameObject.Find("Page (3)(Clone)"));
-                Destroy(GameObject.Find("Page (4)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (4)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-			audiosource.clip = part7;
-			audiosource.Play();
-			count++;
-			sprite.mainTexture = Resources.Load("image4") as Texture;
-			StartCoroutine(FadeIn(sprite, 0.5f, startA));
-			message = "That might not be much, \n but it all adds up. ";
-			StartCoroutine(TypeText(nextAlpha, coverAlpha));
-		}
-		else if (count == 6)
-		{
-            yield return null;
-
-            if (back)
-            {
-                Destroy(GameObject.Find("Page (4)(Clone)"));
-                Destroy(GameObject.Find("Page (5)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (4)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-			audiosource.clip = part8;
-			audiosource.Play();
-			count++;
-			sprite.mainTexture = Resources.Load("image4") as Texture;
-			StartCoroutine(FadeIn(sprite, 0.5f, startA));
-			message = "Especially when a hundred pennies \n fill a dollar's giant cup! ";
-			StartCoroutine(TypeText(nextAlpha, coverAlpha));
-		}
-    /**/else if (count == 7)
-		{
-            if (PlayerPrefs.GetInt("minigames") != 1)
-                yield return null;
-
-            if (!back)
-            {
-                Destroy(GameObject.Find("Page (4)(Clone)"));
-                Destroy(GameObject.Find("Page (5)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (5)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    //chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    //chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-			audiosource.clip = part9;
-			audiosource.Play();
-			count++;
-			sprite.mainTexture = Resources.Load("image5") as Texture;
-			StartCoroutine(FadeIn(sprite, 0.5f, startA));
-			message = "Let's count nickels next \n because they are worth five. ";
-			StartCoroutine(TypeText(nextAlpha, coverAlpha));
-		}
-		else if (count == 8)
-		{
-            yield return null;
-
-            if (back)
-            {
-                Destroy(GameObject.Find("Page (5)(Clone)"));
-                Destroy(GameObject.Find("Page (6)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (5)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    //chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    //chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-			audiosource.clip = part10;
-			audiosource.Play();
-			count++;
-			sprite.mainTexture = Resources.Load("image5") as Texture;
-			StartCoroutine(FadeIn(sprite, 0.5f, startA));
-			message = "So five pennies, \n that's worth one nickel. That's jive. ";
-			StartCoroutine(TypeText(nextAlpha, coverAlpha));
-		}
-		else if (count == 9)
-		{
-            yield return null;
-
-            if (!back)
-            {
-                Destroy(GameObject.Find("Page (5)(Clone)"));
-                Destroy(GameObject.Find("Page (6)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (6)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-			audiosource.clip = part11;
-			audiosource.Play();
-			count++;
-			sprite.mainTexture = Resources.Load("image6") as Texture;
-			StartCoroutine(FadeIn(sprite, 0.5f, startA));
-			message = "Keep counting by fives. \n Five... ten... fifteen... twenty. ";
-			StartCoroutine(TypeText(nextAlpha, coverAlpha));
-		}
-		else if (count == 10)
-		{
-            yield return null;
-
-            if (back)
-            {
-                Destroy(GameObject.Find("Page (6)(Clone)"));
-                Destroy(GameObject.Find("Page (7)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (6)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-			audiosource.clip = part12;
-			audiosource.Play();
-			count++;
-			sprite.mainTexture = Resources.Load("image6") as Texture;
-			StartCoroutine(FadeIn(sprite, 0.5f, startA));
-			message = "A pile of twenty nickels equals a dollar. \n Now that's plenty! ";
-			StartCoroutine(TypeText(nextAlpha, coverAlpha));
-		}
-		else if (count == 11)
-		{
-            yield return null;
-
-            if (!back)
-            {
-                Destroy(GameObject.Find("Page (6)(Clone)"));
-                Destroy(GameObject.Find("Page (7)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (7)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-			audiosource.clip = part13;
-			audiosource.Play();
-			count++;
-			sprite.mainTexture = Resources.Load("image7") as Texture;
-			StartCoroutine(FadeIn(sprite, 0.5f, startA));
-			message = "Next we will count \n these silver coins that are so tiny. ";
-			StartCoroutine(TypeText(nextAlpha, coverAlpha));
-		}
-		else if (count == 12)
-		{
-            yield return null;
-
-            if (back)
-            {
-                Destroy(GameObject.Find("Page (7)(Clone)"));
-                Destroy(GameObject.Find("Page (8)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (7)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-			audiosource.clip = part14;
-			audiosource.Play();
-			count++;
-			sprite.mainTexture = Resources.Load("image7") as Texture;
-			StartCoroutine(FadeIn(sprite, 0.5f, startA));
-			message = "They are dimes \n and they are extra super shiny! ";
-			StartCoroutine(TypeText(nextAlpha, coverAlpha));
-		}
-		else if (count == 13)
-		{
-            yield return null;
-
-            if (!back)
-            {
-                Destroy(GameObject.Find("Page (7)(Clone)"));
-                Destroy(GameObject.Find("Page (8)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (8)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-			audiosource.clip = part15;
-			audiosource.Play();
-			count++;
-			sprite.mainTexture = Resources.Load("image8") as Texture;
-			StartCoroutine(FadeIn(sprite, 0.5f, startA));
-			message = "Two nickels equals one dime \n or ten pennies if you bother. ";
-			StartCoroutine(TypeText(nextAlpha, coverAlpha));
-		}
-        else if (count == 14)
+        switch (count)
         {
-            yield return null;
-
-            if (back)
-            {
-                Destroy(GameObject.Find("Page (8)(Clone)"));
-                Destroy(GameObject.Find("Page (9)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (8)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
+            case -1:
+                inMiniGameMode = false;
+                audiosource.Stop();
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 2) + ")(Clone)"));
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 3) + ")(Clone)"));
+                if (!back)
                 {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
+                    yield return new WaitForSeconds(0.25F);
+                    Destroy(GameObject.Find("UI Root/Part (" + (count + 2) + ")"));
                 }
-            }
+                prefab = Instantiate(Resources.Load("Prefabs/Part (" + (count + 2) + ")")) as GameObject;
+                prefab.transform.SetParent(storyParent.transform);
+                prefab.transform.localScale = new Vector3(100, 100, 1);
+                back = false;
+                audiosource.clip = part[count + 1];
+                audiosource.Play();
+                count++;
+                sprite.mainTexture = Resources.Load("image1") as Texture;
+                StartCoroutine(FadeIn(sprite, 0.5f, startA));
+                message = "Shapes are here to show us the way. \n They make us giggle and help us play.";
+                StartCoroutine(TypeText(nextAlpha, coverAlpha));
+                break;
+            case 0:
+                inMiniGameMode = false;
+                audiosource.Stop();
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 2) + ")(Clone)"));
+                prefab = Instantiate(Resources.Load("Prefabs/Part (" + (count + 2) + ")")) as GameObject;
+                prefab.transform.SetParent(storyParent.transform);
+                prefab.transform.localScale = new Vector3(100, 100, 1);
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 1) + ")(Clone)"));
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 3) + ")(Clone)"));
+                //yield return new WaitForSeconds(0.5F);
+                audiosource.clip = part[count + 1];
+                audiosource.Play();
+                count++;
+                sprite.mainTexture = Resources.Load("image2") as Texture;
+                StartCoroutine(FadeIn(sprite, 0.5f, startA));
+                message = "Tap a shape and be sure to shout.\n  Make sure to name them as you point them out!";
+                StartCoroutine(TypeText(nextAlpha, coverAlpha));
+                break;
+            case 1:
+                inMiniGameMode = false;
+                audiosource.Stop();
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 2) + ")(Clone)"));
+                prefab = Instantiate(Resources.Load("Prefabs/Part (" + (count + 2) + ")")) as GameObject;
+                prefab.transform.SetParent(storyParent.transform);
+                prefab.transform.localScale = new Vector3(100, 100, 1);
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 1) + ")(Clone)"));
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 3) + ")(Clone)"));
+                audiosource.clip = part[count + 1];
+                audiosource.Play();
+                count++;
+                sprite.mainTexture = Resources.Load("image3") as Texture;
+                StartCoroutine(FadeIn(sprite, 0.5f, startA));
+                message = "Circles are shapes that go round and round.\n Holes can be circles dug in the ground.";
+                StartCoroutine(TypeText(nextAlpha, coverAlpha));
+                break;
+            case 2:
+                inMiniGameMode = false;
+                audiosource.Stop();
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 2) + ")(Clone)"));
+                prefab = Instantiate(Resources.Load("Prefabs/Part (" + (count + 2) + ")")) as GameObject;
+                prefab.transform.SetParent(storyParent.transform);
+                prefab.transform.localScale = new Vector3(100, 100, 1);
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 1) + ")(Clone)"));
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 3) + ")(Clone)"));
+                //yield return new WaitForSeconds(0.5F);
+                audiosource.clip = part[count + 1];
+                audiosource.Play();
+                count++;
+                sprite.mainTexture = Resources.Load("image4") as Texture;
+                StartCoroutine(FadeIn(sprite, 0.5f, startA));
+                message = "Circles for a bright moon that you see.\n Circles for yummy cupcakes baked with glee.";
+                StartCoroutine(TypeText(nextAlpha, coverAlpha));
+                break;
+            case 3:
+                inMiniGameMode = true;
+                audiosource.Stop();
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 2) + ")(Clone)"));
+                prefab = Instantiate(Resources.Load("Prefabs/Part (" + (count + 2) + ")")) as GameObject;
+                prefab.transform.SetParent(storyParent.transform);
+                prefab.transform.localScale = new Vector3(100, 100, 1);
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 1) + ")(Clone)"));
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 3) + ")(Clone)"));
+                //yield return new WaitForSeconds(0.5F);
+                audiosource.clip = part[count + 1];
 
-            audiosource.Stop();
-            audiosource.clip = part16;
-            audiosource.Play();
-            count++;
-            sprite.mainTexture = Resources.Load("image8") as Texture;
-            StartCoroutine(FadeIn(sprite, 0.5f, startA));
-            message = "And if you count ten dimes \n you will have one dollar! ";
-            StartCoroutine(TypeText(nextAlpha, coverAlpha));
+                audiosource.Play();
+                count++;
+                sprite.mainTexture = Resources.Load("image5") as Texture;
+                StartCoroutine(FadeIn(sprite, 0.5f, startA));
+                message = "Tap the circles and be sure to shout.\n  Make sure to name them as you point them out!";
+                StartCoroutine(TypeText(nextAlpha, coverAlpha));
+                break;
+            case 4:
+                inMiniGameMode = false;
+                audiosource.Stop();
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 2) + ")(Clone)"));
+                prefab = Instantiate(Resources.Load("Prefabs/Part (" + (count + 2) + ")")) as GameObject;
+                prefab.transform.SetParent(storyParent.transform);
+                prefab.transform.localScale = new Vector3(100, 100, 1);
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 1) + ")(Clone)"));
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 3) + ")(Clone)"));
+                //yield return new WaitForSeconds(0.5F);
+                audiosource.clip = part[count + 1];
+
+                audiosource.Play();
+                count++;
+                sprite.mainTexture = Resources.Load("image6") as Texture;
+                StartCoroutine(FadeIn(sprite, 0.5f, startA));
+                message = "Squares have 4 sides that are equal, indeed.\n Books can be squares that you can read.";
+                StartCoroutine(TypeText(nextAlpha, coverAlpha));
+                break;
+            case 5:
+                inMiniGameMode = false;
+                audiosource.Stop();
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 2) + ")(Clone)"));
+                prefab = Instantiate(Resources.Load("Prefabs/Part (" + (count + 2) + ")")) as GameObject;
+                prefab.transform.SetParent(storyParent.transform);
+                prefab.transform.localScale = new Vector3(100, 100, 1);
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 1) + ")(Clone)"));
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 3) + ")(Clone)"));
+                //yield return new WaitForSeconds(0.5F);
+                audiosource.clip = part[count + 1];
+
+                audiosource.Play();
+                count++;
+                sprite.mainTexture = Resources.Load("image7") as Texture;
+                StartCoroutine(FadeIn(sprite, 0.5f, startA));
+                message = "Squares for a table on the side of your bed.\n Squares for a mirror to see the top of your head.";
+                StartCoroutine(TypeText(nextAlpha, coverAlpha));
+                break;
+            case 6:
+                inMiniGameMode = true;
+                audiosource.Stop();
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 2) + ")(Clone)"));
+                prefab = Instantiate(Resources.Load("Prefabs/Part (" + (count + 2) + ")")) as GameObject;
+                prefab.transform.SetParent(storyParent.transform);
+                prefab.transform.localScale = new Vector3(100, 100, 1);
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 1) + ")(Clone)"));
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 3) + ")(Clone)"));
+                //yield return new WaitForSeconds(0.5F);
+                audiosource.clip = part[count + 1];
+
+                audiosource.Play();
+                count++;
+                sprite.mainTexture = Resources.Load("image8") as Texture;
+                StartCoroutine(FadeIn(sprite, 0.5f, startA));
+                message = "Tap the squares and be sure to shout.\n  Make sure to name them as you point them out!";
+                StartCoroutine(TypeText(nextAlpha, coverAlpha));
+                break;
+            case 7:
+                inMiniGameMode = false;
+                audiosource.Stop();
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 2) + ")(Clone)"));
+                prefab = Instantiate(Resources.Load("Prefabs/Part (" + (count + 2) + ")")) as GameObject;
+                prefab.transform.SetParent(storyParent.transform);
+                prefab.transform.localScale = new Vector3(100, 100, 1);
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 1) + ")(Clone)"));
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 3) + ")(Clone)"));
+                //yield return new WaitForSeconds(0.5F);
+                audiosource.clip = part[count + 1];
+
+                audiosource.Play();
+                count++;
+                sprite.mainTexture = Resources.Load("image9") as Texture;
+                StartCoroutine(FadeIn(sprite, 0.5f, startA));
+                message = "Triangles have 3 points and sides on any day.\n Arrows can be triangles showing the way.";
+                StartCoroutine(TypeText(nextAlpha, coverAlpha));
+                break;
+            case 8:
+                inMiniGameMode = false;
+                audiosource.Stop();
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 2) + ")(Clone)"));
+                prefab = Instantiate(Resources.Load("Prefabs/Part (" + (count + 2) + ")")) as GameObject;
+                prefab.transform.SetParent(storyParent.transform);
+                prefab.transform.localScale = new Vector3(100, 100, 1);
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 1) + ")(Clone)"));
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 3) + ")(Clone)"));
+                //yield return new WaitForSeconds(0.5F);
+                audiosource.clip = part[count + 1];
+
+                audiosource.Play();
+                count++;
+                sprite.mainTexture = Resources.Load("image10") as Texture;
+                StartCoroutine(FadeIn(sprite, 0.5f, startA));
+                message = "Triangles for a cheese wedge for mice.\n Triangles for a tasty pizza slice.";
+                StartCoroutine(TypeText(nextAlpha, coverAlpha));
+                break;
+            case 9:
+                inMiniGameMode = true;
+                audiosource.Stop();
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 2) + ")(Clone)"));
+                prefab = Instantiate(Resources.Load("Prefabs/Part (" + (count + 2) + ")")) as GameObject;
+                prefab.transform.SetParent(storyParent.transform);
+                prefab.transform.localScale = new Vector3(100, 100, 1);
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 1) + ")(Clone)"));
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 3) + ")(Clone)"));
+                //yield return new WaitForSeconds(0.5F);
+                audiosource.clip = part[count + 1];
+
+                audiosource.Play();
+                count++;
+                sprite.mainTexture = Resources.Load("image11") as Texture;
+                StartCoroutine(FadeIn(sprite, 0.5f, startA));
+                message = "Tap the triangles and be sure to shout.\n  Make sure to name them as you point them out!";
+                StartCoroutine(TypeText(nextAlpha, coverAlpha));
+                break;
+            case 10:
+                inMiniGameMode = false;
+                audiosource.Stop();
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 2) + ")(Clone)"));
+                prefab = Instantiate(Resources.Load("Prefabs/Part (" + (count + 2) + ")")) as GameObject;
+                prefab.transform.SetParent(storyParent.transform);
+                prefab.transform.localScale = new Vector3(100, 100, 1);
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 1) + ")(Clone)"));
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 3) + ")(Clone)"));
+                //yield return new WaitForSeconds(0.5F);
+                audiosource.clip = part[count + 1];
+                audiosource.Play();
+                count++;
+                sprite.mainTexture = Resources.Load("image12") as Texture;
+                StartCoroutine(FadeIn(sprite, 0.5f, startA));
+                message = "Ovals are a circle squished like a sleeve.\n Grapes can be ovals and are tasty indeed.";
+                StartCoroutine(TypeText(nextAlpha, coverAlpha));
+                break;
+            case 11:
+                inMiniGameMode = false;
+                audiosource.Stop();
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 2) + ")(Clone)"));
+                prefab = Instantiate(Resources.Load("Prefabs/Part (" + (count + 2) + ")")) as GameObject;
+                prefab.transform.SetParent(storyParent.transform);
+                prefab.transform.localScale = new Vector3(100, 100, 1);
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 1) + ")(Clone)"));
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 3) + ")(Clone)"));
+                //yield return new WaitForSeconds(0.5F);
+                audiosource.clip = part[count + 1];
+
+                audiosource.Play();
+                count++;
+                sprite.mainTexture = Resources.Load("image13") as Texture;
+                StartCoroutine(FadeIn(sprite, 0.5f, startA));
+                message = "Ovals for a bathtub where you scrub your feet.\n Ovals for eggs that make tasty grub to eat.";
+                StartCoroutine(TypeText(nextAlpha, coverAlpha));
+                break;
+            case 12:
+                inMiniGameMode = true;
+                audiosource.Stop();
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 2) + ")(Clone)"));
+                prefab = Instantiate(Resources.Load("Prefabs/Part (" + (count + 2) + ")")) as GameObject;
+                prefab.transform.SetParent(storyParent.transform);
+                prefab.transform.localScale = new Vector3(100, 100, 1);
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 1) + ")(Clone)"));
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 3) + ")(Clone)"));
+                //yield return new WaitForSeconds(0.5F);
+                audiosource.clip = part[count + 1];
+
+                audiosource.Play();
+                count++;
+                sprite.mainTexture = Resources.Load("image14") as Texture;
+                StartCoroutine(FadeIn(sprite, 0.5f, startA));
+                message = "Tap the ovals and be sure to shout.\n  Make sure to name them as you point them out!";
+                StartCoroutine(TypeText(nextAlpha, coverAlpha));
+                break;
+            case 13:
+                inMiniGameMode = false;
+                audiosource.Stop();
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 2) + ")(Clone)"));
+                prefab = Instantiate(Resources.Load("Prefabs/Part (" + (count + 2) + ")")) as GameObject;
+                prefab.transform.SetParent(storyParent.transform);
+                prefab.transform.localScale = new Vector3(100, 100, 1);
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 1) + ")(Clone)"));
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 3) + ")(Clone)"));
+                //yield return new WaitForSeconds(0.5F);
+                audiosource.clip = part[count + 1];
+
+                audiosource.Play();
+                count++;
+                sprite.mainTexture = Resources.Load("image15") as Texture;
+                StartCoroutine(FadeIn(sprite, 0.5f, startA));
+                message = "Diamonds are two triangles attached head to head.\n Rings can have diamonds that last forever it is said.";
+                StartCoroutine(TypeText(nextAlpha, coverAlpha));
+                break;
+            case 14:
+                inMiniGameMode = false;
+                audiosource.Stop();
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 2) + ")(Clone)"));
+                prefab = Instantiate(Resources.Load("Prefabs/Part (" + (count + 2) + ")")) as GameObject;
+                prefab.transform.SetParent(storyParent.transform);
+                prefab.transform.localScale = new Vector3(100, 100, 1);
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 1) + ")(Clone)"));
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 3) + ")(Clone)"));
+                //yield return new WaitForSeconds(0.5F);
+                audiosource.clip = part[count + 1];
+
+                audiosource.Play();
+                count++;
+                sprite.mainTexture = Resources.Load("image16") as Texture;
+                StartCoroutine(FadeIn(sprite, 0.5f, startA));
+                message = "Diamonds for a baseball field with bases and a home.\n Diamonds for a kite that you fly and let roam.";
+                StartCoroutine(TypeText(nextAlpha, coverAlpha));
+                break;
+            case 15:
+                inMiniGameMode = true;
+                audiosource.Stop();
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 2) + ")(Clone)"));
+                prefab = Instantiate(Resources.Load("Prefabs/Part (" + (count + 2) + ")")) as GameObject;
+                prefab.transform.SetParent(storyParent.transform);
+                prefab.transform.localScale = new Vector3(100, 100, 1);
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 1) + ")(Clone)"));
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 3) + ")(Clone)"));
+                //yield return new WaitForSeconds(0.5F);
+                audiosource.clip = part[count + 1];
+
+                audiosource.Play();
+                count++;
+                sprite.mainTexture = Resources.Load("image17") as Texture;
+                StartCoroutine(FadeIn(sprite, 0.5f, startA));
+                message = "Tap the diamonds and be sure to shout.\n Make sure to name them as you point them out!";
+                StartCoroutine(TypeText(nextAlpha, coverAlpha));
+                break;
+            case 16:
+                inMiniGameMode = false;
+                audiosource.Stop();
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 2) + ")(Clone)"));
+                prefab = Instantiate(Resources.Load("Prefabs/Part (" + (count + 2) + ")")) as GameObject;
+                prefab.transform.SetParent(storyParent.transform);
+                prefab.transform.localScale = new Vector3(100, 100, 1);
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 1) + ")(Clone)"));
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 3) + ")(Clone)"));
+                //yield return new WaitForSeconds(0.5F);
+                audiosource.clip = part[count + 1];
+
+                audiosource.Play();
+                count++;
+                sprite.mainTexture = Resources.Load("image18") as Texture;
+                StartCoroutine(FadeIn(sprite, 0.5f, startA));
+                message = "Stars have 5 points that always stick out.\n Badges can be stars on uniforms no doubt.";
+                StartCoroutine(TypeText(nextAlpha, coverAlpha));
+                break;
+            case 17:
+                inMiniGameMode = false;
+                audiosource.Stop();
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 2) + ")(Clone)"));
+                prefab = Instantiate(Resources.Load("Prefabs/Part (" + (count + 2) + ")")) as GameObject;
+                prefab.transform.SetParent(storyParent.transform);
+                prefab.transform.localScale = new Vector3(100, 100, 1);
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 1) + ")(Clone)"));
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 3) + ")(Clone)"));
+                //yield return new WaitForSeconds(0.5F);
+                audiosource.clip = part[count + 1];
+
+                audiosource.Play();
+                count++;
+                sprite.mainTexture = Resources.Load("image19") as Texture;
+                StartCoroutine(FadeIn(sprite, 0.5f, startA));
+                message = "Stars for a sun that gives us heat and light.\n Stars for a starfish that moves around at night.";
+                StartCoroutine(TypeText(nextAlpha, coverAlpha));
+                break;
+            case 18:
+                inMiniGameMode = true;
+                audiosource.Stop();
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 2) + ")(Clone)"));
+                prefab = Instantiate(Resources.Load("Prefabs/Part (" + (count + 2) + ")")) as GameObject;
+                prefab.transform.SetParent(storyParent.transform);
+                prefab.transform.localScale = new Vector3(100, 100, 1);
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 1) + ")(Clone)"));
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 3) + ")(Clone)"));
+                //yield return new WaitForSeconds(0.5F);
+                audiosource.clip = part[count + 1];
+
+                audiosource.Play();
+                count++;
+                sprite.mainTexture = Resources.Load("image20") as Texture;
+                StartCoroutine(FadeIn(sprite, 0.5f, startA));
+                message = "Tap the stars and be sure to shout.\n  Make sure to name them as you point them out!";
+                StartCoroutine(TypeText(nextAlpha, coverAlpha));
+                break;
+            case 19:
+                inMiniGameMode = false;
+                audiosource.Stop();
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 2) + ")(Clone)"));
+                prefab = Instantiate(Resources.Load("Prefabs/Part (" + (count + 2) + ")")) as GameObject;
+                prefab.transform.SetParent(storyParent.transform);
+                prefab.transform.localScale = new Vector3(100, 100, 1);
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 1) + ")(Clone)"));
+                Destroy(GameObject.Find("UI Root/Part (" + (count + 3) + ")(Clone)"));
+                //yield return new WaitForSeconds(0.5F);
+                audiosource.clip = part[count + 1];
+
+                audiosource.Play();
+                count++;
+                sprite.mainTexture = Resources.Load("image21") as Texture;
+                StartCoroutine(FadeIn(sprite, 0.5f, startA));
+                message = "Shapes, shapes, are found everywhere.\n  Next time you find one, make sure to share!";
+                StartCoroutine(TypeText(nextAlpha, coverAlpha));
+                break;
+            case 20:
+                inMiniGameMode = false;
+                StartCoroutine(DisplayScene());
+                break;
+            default:
+                break;
         }
-        else if (count == 15)
-        {
-            yield return null;
-
-            if (!back)
-            {
-                Destroy(GameObject.Find("Page (8)(Clone)"));
-                Destroy(GameObject.Find("Page (9)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (9)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-            audiosource.clip = part17;
-            audiosource.Play();
-            count++;
-            sprite.mainTexture = Resources.Load("image9") as Texture;
-            StartCoroutine(FadeIn(sprite, 0.5f, startA));
-            message = "The next coin is slightly bigger \n and it is called a quarter. ";
-            StartCoroutine(TypeText(nextAlpha, coverAlpha));
-        }
-        else if (count == 16)
-        {
-            yield return null;
-
-            if (back)
-            {
-                Destroy(GameObject.Find("Page (9)(Clone)"));
-                Destroy(GameObject.Find("Page (10)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (9)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-            audiosource.clip = part18;
-            audiosource.Play();
-            count++;
-            sprite.mainTexture = Resources.Load("image9") as Texture;
-            StartCoroutine(FadeIn(sprite, 0.5f, startA));
-            message = "Now a quarter is worth five nickels \n if you needed to barter. ";
-            StartCoroutine(TypeText(nextAlpha, coverAlpha));
-        }
-    /**/else if (count == 17)
-		{
-            if (PlayerPrefs.GetInt("minigames") != 1)
-                yield return null;
-
-            if (!back)
-            {
-                Destroy(GameObject.Find("Page (9)(Clone)"));
-                Destroy(GameObject.Find("Page (10)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (10)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-			audiosource.clip = part19;
-			audiosource.Play();
-			count++;
-			sprite.mainTexture = Resources.Load("image10") as Texture;
-			StartCoroutine(FadeIn(sprite, 0.5f, startA));
-			message = "Or you could count twenty-five \n pennies if you can endure. ";
-			StartCoroutine(TypeText(nextAlpha, coverAlpha));
-		}
-		else if (count == 18)
-		{
-            yield return null;
-
-            if (back)
-            {
-                Destroy(GameObject.Find("Page (10)(Clone)"));
-                Destroy(GameObject.Find("Page (11)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (10)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-			audiosource.clip = part20;
-			audiosource.Play();
-			count++;
-			sprite.mainTexture = Resources.Load("image10") as Texture;
-			StartCoroutine(FadeIn(sprite, 0.5f, startA));
-			message = "Because four quarters equals a dollar \n that's for sure! ";
-			StartCoroutine(TypeText(nextAlpha, coverAlpha));
-		}
-		else if (count == 19)
-		{
-            yield return null;
-
-            if (!back)
-            {
-                Destroy(GameObject.Find("Page (10)(Clone)"));
-                Destroy(GameObject.Find("Page (11)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (11)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-			audiosource.clip = part21;
-			audiosource.Play();
-			count++;
-			sprite.mainTexture = Resources.Load("image11") as Texture;
-			StartCoroutine(FadeIn(sprite, 0.5f, startA));
-			message = "Next is the fifty-cent piece, \n which we call a half-dollar. ";
-			StartCoroutine(TypeText(nextAlpha, coverAlpha));
-		}
-        else if (count == 20)
-        {
-            yield return null;
-
-            if (back)
-            {
-                Destroy(GameObject.Find("Page (11)(Clone)"));
-                Destroy(GameObject.Find("Page (12)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (11)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-            audiosource.clip = part22;
-            audiosource.Play();
-            count++;
-            sprite.mainTexture = Resources.Load("image11") as Texture;
-            StartCoroutine(FadeIn(sprite, 0.5f, startA));
-            message = "And you can figure it out because \n all other coins are smaller. ";
-            StartCoroutine(TypeText(nextAlpha, coverAlpha));
-        }
-        else if (count == 21)
-        {
-            yield return null;
-
-            if (!back)
-            {
-                Destroy(GameObject.Find("Page (11)(Clone)"));
-                Destroy(GameObject.Find("Page (12)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (12)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-            audiosource.clip = part23;
-            audiosource.Play();
-            count++;
-            sprite.mainTexture = Resources.Load("image12") as Texture;
-            StartCoroutine(FadeIn(sprite, 0.5f, startA));
-            message = "Fifty pennies, two quarters, ten nickels \n or five dimes makes the same amount  ";
-            StartCoroutine(TypeText(nextAlpha, coverAlpha));
-        }
-        else if (count == 22)
-        {
-            yield return null;
-
-            if (back)
-            {
-                Destroy(GameObject.Find("Page (12)(Clone)"));
-                Destroy(GameObject.Find("Page (13)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (12)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-            audiosource.clip = part24;
-            audiosource.Play();
-            count++;
-            sprite.mainTexture = Resources.Load("image12") as Texture;
-            StartCoroutine(FadeIn(sprite, 0.5f, startA));
-            message = "Two half-dollars together gives you a dollar, \n which makes it easy to count. ";
-            StartCoroutine(TypeText(nextAlpha, coverAlpha));
-        }
-        else if (count == 23)
-        {
-            yield return null;
-
-            if (!back)
-            {
-                Destroy(GameObject.Find("Page (12)(Clone)"));
-                Destroy(GameObject.Find("Page (13)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (13)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-            audiosource.clip = part25;
-            audiosource.Play();
-            count++;
-            sprite.mainTexture = Resources.Load("image13") as Texture;
-            StartCoroutine(FadeIn(sprite, 0.5f, startA));
-            message = "Five nickels, a quarter and \n one half-dollar does the same. ";
-            StartCoroutine(TypeText(nextAlpha, coverAlpha));
-        }
-        else if (count == 24)
-        {
-            yield return null;
-
-            if (back)
-            {
-                Destroy(GameObject.Find("Page (13)(Clone)"));
-                Destroy(GameObject.Find("Page (14)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (13)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-            audiosource.clip = part26;
-            audiosource.Play();
-            count++;
-            sprite.mainTexture = Resources.Load("image13") as Texture;
-            StartCoroutine(FadeIn(sprite, 0.5f, startA));
-            message = "Or five dimes and two quarters \n can make the same claim. ";
-            StartCoroutine(TypeText(nextAlpha, coverAlpha));
-        }
-        else if (count == 25)
-        {
-            yield return null;
-
-            if (!back)
-            {
-                Destroy(GameObject.Find("Page (13)(Clone)"));
-                Destroy(GameObject.Find("Page (14)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (14)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-            audiosource.clip = part27;
-            audiosource.Play();
-            count++;
-            sprite.mainTexture = Resources.Load("image14") as Texture;
-            StartCoroutine(FadeIn(sprite, 0.5f, startA));
-            message = "Let's try ten pennies, four dimes \n with ten nickels to round out.  ";
-            StartCoroutine(TypeText(nextAlpha, coverAlpha));
-        }
-        else if (count == 26)
-        {
-            yield return null;
-
-            if (back)
-            {
-                Destroy(GameObject.Find("Page (14)(Clone)"));
-                Destroy(GameObject.Find("Page (15)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (14)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-            audiosource.clip = part28;
-            audiosource.Play();
-            count++;
-            sprite.mainTexture = Resources.Load("image14") as Texture;
-            StartCoroutine(FadeIn(sprite, 0.5f, startA));
-            message = "We still make a dollar \n for the final amount. ";
-            StartCoroutine(TypeText(nextAlpha, coverAlpha));
-        }
-    /**/else if (count == 27)
-        {
-            if (PlayerPrefs.GetInt("minigames") != 1)
-                yield return null;
-
-            if (!back)
-            {
-                Destroy(GameObject.Find("Page (14)(Clone)"));
-                Destroy(GameObject.Find("Page (15)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (15)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-            audiosource.clip = part29;
-            audiosource.Play();
-            count++;
-            sprite.mainTexture = Resources.Load("image15") as Texture;
-            StartCoroutine(FadeIn(sprite, 0.5f, startA));
-            message = "Counting dollars in many different ways \n may sometimes seem funny. ";
-            StartCoroutine(TypeText(nextAlpha, coverAlpha));
-        }
-        else if (count == 28)
-        {
-            yield return null;
-
-            if (back)
-            {
-                Destroy(GameObject.Find("Page (15)(Clone)"));
-                Destroy(GameObject.Find("Page (16)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (15)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-            audiosource.clip = part30;
-            audiosource.Play();
-            count++;
-            sprite.mainTexture = Resources.Load("image15") as Texture;
-            StartCoroutine(FadeIn(sprite, 0.5f, startA));
-            message = "Ten dimes or one-hundred cents \n will always equal a dollar in money. ";
-            StartCoroutine(TypeText(nextAlpha, coverAlpha));
-        }
-        else if (count == 29)
-        {
-            yield return null;
-
-            if (!back)
-            {
-                Destroy(GameObject.Find("Page (15)(Clone)"));
-                Destroy(GameObject.Find("Page (16)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (16)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-            audiosource.clip = part31;
-            audiosource.Play();
-            count++;
-            sprite.mainTexture = Resources.Load("image16") as Texture;
-            StartCoroutine(FadeIn(sprite, 0.5f, startA));
-            message = "That's why when you have money, \n it's so important to count! ";
-            StartCoroutine(TypeText(nextAlpha, coverAlpha));
-        }
-        else if (count == 30)
-        {
-            yield return null;
-
-            if (back)
-            {
-                Destroy(GameObject.Find("Page (16)(Clone)"));
-                Destroy(GameObject.Find("Page (17)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (16)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-            audiosource.clip = part32;
-            audiosource.Play();
-            count++;
-            sprite.mainTexture = Resources.Load("image16") as Texture;
-            StartCoroutine(FadeIn(sprite, 0.5f, startA));
-            message = "So we can count all of our coins \n and know the exact amount. ";
-            StartCoroutine(TypeText(nextAlpha, coverAlpha));
-        }
-        else if (count == 31)
-        {
-            yield return null;
-
-            if (!back)
-            {
-                Destroy(GameObject.Find("Page (16)(Clone)"));
-                Destroy(GameObject.Find("Page (17)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (17)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-            audiosource.clip = part33;
-            audiosource.Play();
-            count++;
-            sprite.mainTexture = Resources.Load("image17") as Texture;
-            StartCoroutine(FadeIn(sprite, 0.5f, startA));
-            message = "And it would be a good time \n to save some of it today. ";
-            StartCoroutine(TypeText(nextAlpha, coverAlpha));
-        }
-        else if (count == 32)
-        {
-            yield return null;
-
-            if (back)
-            {
-                Destroy(GameObject.Find("Page (17)(Clone)"));
-                Destroy(GameObject.Find("Page (18)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (17)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-            audiosource.clip = part34;
-            audiosource.Play();
-            count++;
-            sprite.mainTexture = Resources.Load("image17") as Texture;
-            StartCoroutine(FadeIn(sprite, 0.5f, startA));
-            message = "In a bank account so our coins \n don't somehow fly away. ";
-            StartCoroutine(TypeText(nextAlpha, coverAlpha));
-        }
-        else if (count == 33)
-        {
-            yield return null;
-
-            if (!back)
-            {
-                Destroy(GameObject.Find("Page (17)(Clone)"));
-                Destroy(GameObject.Find("Page (18)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (18)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-            audiosource.clip = part35;
-            audiosource.Play();
-            count++;
-            sprite.mainTexture = Resources.Load("image18") as Texture;
-            StartCoroutine(FadeIn(sprite, 0.5f, startA));
-            message = "There is money, \n money piled everywhere. ";
-            StartCoroutine(TypeText(nextAlpha, coverAlpha));
-        }
-        else if (count == 34)
-        {
-            yield return null;
-
-            if (back)
-            {
-                Destroy(GameObject.Find("Page (17)(Clone)"));
-                Destroy(GameObject.Find("Page (18)(Clone)"));
-
-                pagePrefab = Instantiate(Resources.Load("Page (18)")) as GameObject;
-                //pagePrefab.transform.SetParent(storyView.transform);
-                //pagePrefab.transform.localScale = new Vector3(1, 1, 1);
-
-                UI2DSprite[] characters = pagePrefab.GetComponentsInChildren<UI2DSprite>();
-                foreach (UI2DSprite chars in characters)
-                {
-                    chars.ResetAnchors();
-                    chars.SetAnchor(UICamera.list[0].transform);
-                    chars.ResetAnchors();
-                }
-            }
-
-            audiosource.Stop();
-            audiosource.clip = part36;
-            audiosource.Play();
-            count++;
-            sprite.mainTexture = Resources.Load("image18") as Texture;
-            StartCoroutine(FadeIn(sprite, 0.5f, startA));
-            message = "Money for counting. \n Money to share. ";
-            StartCoroutine(TypeText(nextAlpha, coverAlpha));
-        }
-        else if (count == 35)
-		{
-            //DisableCharacters(page18);
-			//ls.GetComponent<UIPanel>().alpha = 1f;
-			storyView.alpha = 0f;
-
-            //SceneManager.LoadSceneAsync("LoadingScreen");
-			StartCoroutine(DisplayScene());
-		}
-        //}
 
         back = false;
+        //print("unload the toad");
         Resources.UnloadUnusedAssets();
     }
 
 
-	IEnumerator FadeIn(UIWidget w, float durationInSeconds, float a)
+    IEnumerator FadeIn(UIWidget w, float durationInSeconds, float a)
 	{
 		float startA = w.alpha;
 		float currentTime = 0f;

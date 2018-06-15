@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5CD21998-9D5C-294D-E66B-9F362F498850}</ProjectGuid>
+    <ProjectGuid>{7D19D709-4240-08EB-EDE8-4B3A7FEFCF9D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -340,15 +340,15 @@
  <HintPath>C:/Program Files/Unity 5.6.1/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="ICSharpCode.SharpZipLib">
- <HintPath>C:/Users/HMoss.DESKTOP-LO6F45S/Documents/GitHub/MoneyCount/Assets/Plugins/ICSharpCode.SharpZipLib.dll</HintPath>
+ <HintPath>C:/Users/HMoss.DESKTOP-LO6F45S/Documents/GitHub/StemStoriezBaseProject/Assets/Plugins/ICSharpCode.SharpZipLib.dll</HintPath>
  </Reference>
  <Reference Include="UniRateWP">
- <HintPath>C:/Users/HMoss.DESKTOP-LO6F45S/Documents/GitHub/MoneyCount/Assets/Plugins/UniRateWP.dll</HintPath>
+ <HintPath>C:/Users/HMoss.DESKTOP-LO6F45S/Documents/GitHub/StemStoriezBaseProject/Assets/Plugins/UniRateWP.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{70C74A63-DCAD-3968-99A8-F87581166299}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{26D9BE72-7FCE-5253-D7CF-D9A72AC0D2A5}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
